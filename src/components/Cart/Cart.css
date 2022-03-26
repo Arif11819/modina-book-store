@@ -1,0 +1,16 @@
+.cart{
+    position: sticky;
+    top: 0;
+}
+.choose-btn{
+    background-color: rgb(231, 41, 16);
+    border: none;
+    border-radius: 8px;
+    padding: 2px 9px;
+}
+.btn-text{
+    color: aliceblue;
+    font-size: 13px;
+    
+}
+
