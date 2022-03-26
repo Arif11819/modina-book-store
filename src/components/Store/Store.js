@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react';
+
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
@@ -21,6 +21,10 @@ const Store = () => {
         const removeCart = [];
         setCart(removeCart);
     }
+    const randomChoice = () => {
+        const random = cart[Math.floor(Math.random() * cart.length)];
+        setCart([random]);
+    }
 
     return (
         <div className='store-container'>
@@ -34,7 +38,7 @@ const Store = () => {
                 }
             </div>
             <div className='cart-container'>
-                <Cart cart={cart} handleChooseAgain={handleChooseAgain}></Cart>
+                <Cart key={cart.id} cart={cart} handleChooseAgain={handleChooseAgain} randomChoice={randomChoice}></Cart>
             </div>
         </div>
     );
