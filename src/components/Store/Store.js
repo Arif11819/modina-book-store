@@ -1,3 +1,4 @@
+import { render } from '@testing-library/react';
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
@@ -16,6 +17,10 @@ const Store = () => {
         const newCart = [...cart, product];
         setCart(newCart);
     }
+    const handleChooseAgain = () => {
+        const removeCart = [];
+        setCart(removeCart);
+    }
 
     return (
         <div className='store-container'>
@@ -25,12 +30,11 @@ const Store = () => {
                         product={product}
                         key={product.id}
                         handleAddToCart={handleAddToCart}
-
                     ></Product>)
                 }
             </div>
             <div className='cart-container'>
-                <Cart cart={cart}></Cart>
+                <Cart cart={cart} handleChooseAgain={handleChooseAgain}></Cart>
             </div>
         </div>
     );
