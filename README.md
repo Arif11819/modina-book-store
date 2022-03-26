@@ -1,6 +1,6 @@
-Modina Book Store
+ Modina Book Store
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://starlit-medovik-931208.netlify.app
 
 ## Available Scripts
 
