@@ -25,6 +25,7 @@ const Store = () => {
                         product={product}
                         key={product.id}
                         handleAddToCart={handleAddToCart}
+
                     ></Product>)
                 }
             </div>

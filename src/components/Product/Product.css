@@ -18,6 +18,10 @@
     align-items: center;
     justify-content: center;
 }
+.btn-text{
+    color:black;
+    font-size: 17px;
+}
 .btn-cart .btn-text{
     margin-right: 9px;
 }
